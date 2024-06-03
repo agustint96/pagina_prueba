@@ -1,0 +1,93 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    flex-direction: column;
+    
+}
+
+.contenedor__imagen {
+    position: relative;
+   
+    
+}
+
+
+    
+
+    
+
+
+.imagen img {
+    max-width: 400px;
+    height: auto;
+    filter: opacity(80%);
+    position: relative;
+    z-index: 1;
+}
+
+
+.imagen2 {
+    
+    position: absolute;
+    top: 17%;
+    left: 80%;
+    transform: translateX(-44%);
+    z-index: 0;
+}
+
+.imagen2--img:hover {
+    filter: opacity(100%);/* Aplica el filtro de brillo cuando el mouse está sobre la segunda imagen */
+}
+
+
+.imagen2 img {
+    
+    max-width: 571px;
+    height: auto;
+    filter: opacity(44%);
+}
+
+@media (max-width: 883.2px) {
+    .imagen2 img {
+        max-width: 400px; /* Reduce el tamaño de la imagen del fondo */
+        height: auto;
+    }
+
+    .imagen2 {
+        top: 23%;
+        left: 39%;
+        transform: translateX(-10%);
+    }
+}
+
+/* Media query para pantallas aún más pequeñas (por ejemplo, 600px de ancho o menos) */
+@media (max-width: 600px) {
+    .imagen2 img {
+        max-width: 250px; /* Reduce aún más el tamaño de la imagen del fondo */
+        height: auto;
+    }
+
+    .imagen2 {
+        left: 50%; /* Ajusta la posición horizontal en pantallas más pequeñas */
+        transform: translateX(-10%);
+    }
+}
+
+@media (max-width: 500px) {
+    .imagen2 img {
+        max-width: 235px; /* Reduce aún más el tamaño de la imagen del fondo */
+        height: auto;
+    }
+
+    .imagen2 {
+        top: 34%;
+         left: 50%;
+        transform: translateX(-22%);
+        top: 36%;
+        width: 55vw;
+    }
+}
