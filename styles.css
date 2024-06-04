@@ -4,10 +4,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: #fefefe;
     flex-direction: column;
+    font-family: "Cedarville Cursive", cursive;
     
 }
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: auto;
+    font-style: normal;
+  }
+  
 
 .contenedor__imagen {
     position: relative;
@@ -52,6 +60,7 @@ body, html {
 }
 
 @media (max-width: 883.2px) {
+  
     .imagen2 img {
         max-width: 400px; /* Reduce el tamaño de la imagen del fondo */
         height: auto;
@@ -66,6 +75,8 @@ body, html {
 
 /* Media query para pantallas aún más pequeñas (por ejemplo, 600px de ancho o menos) */
 @media (max-width: 600px) {
+
+ 
     .imagen2 img {
         max-width: 250px; /* Reduce aún más el tamaño de la imagen del fondo */
         height: auto;
@@ -78,9 +89,18 @@ body, html {
 }
 
 @media (max-width: 500px) {
+
     .imagen2 img {
         max-width: 235px; /* Reduce aún más el tamaño de la imagen del fondo */
         height: auto;
+        .parrafo__landing{
+        font-size: smaller;
+        padding: 1%;
+    }
+    .parrafo__landing{
+        font-size: small;
+        padding: 1%;
+    }
     }
 
     .imagen2 {
@@ -89,5 +109,18 @@ body, html {
         transform: translateX(-22%);
         top: 36%;
         width: 55vw;
+        
     }
+    
+    .parrafo__landing{
+        font-size: smaller;
+        padding: 1%;
+        margin-top: 0;
+    }
+}
+
+
+
+.parrafo__landing{
+    font-size: 1rem;
 }
